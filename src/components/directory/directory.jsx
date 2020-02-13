@@ -9,14 +9,72 @@ class Directory extends React.Component {
         this.state = {
             sections: [
                 {
-                    title: 'candles',
-                    imageUrl: 'https://fee.org/media/26184/scentedcandle.jpg?anchor=center&mode=crop&width=1920&rnd=131602403570000000',
-                    id: 1
+                    title: 'code',
+                    imageUrl: '#',
+                    id: 1,
+                    linkUrl: 'code'
                 },
                 {
-                    title: 'hearts',
+                    title: 'write',
                     imageUrl: '#',
-                    id: 2
+                    id: 2,
+                    linkUrl: 'write'
+                },
+                {
+                    title: 'dance',
+                    imageUrl: '#',
+                    id: 3,
+                    linkUrl: 'dance'
+                },
+                {
+                    title: 'freerun',
+                    imageUrl: '#',
+                    id: 4,
+                    linkUrl: 'freerun'
+                }
+            ],
+            colors: [
+                {
+                    title: 'red',
+                    imageUrl: '#',
+                    id: 1,
+                    linkUrl: 'red'
+                },
+                {
+                    title: 'orange',
+                    imageUrl: '#',
+                    id: 2,
+                    linkUrl: ''
+                },
+                {
+                    title: 'yellow',
+                    imageUrl: '#',
+                    id: 3,
+                    linkUrl: ''
+                },
+                {
+                    title: 'green',
+                    imageUrl: '#',
+                    id: 4,
+                    linkUrl: ''
+                },
+                {
+                    title: 'blue',
+                    imageUrl: '#',
+                    id: 5,
+                    linkUrl: ''
+                },
+                {
+                    title: 'indigo',
+                    imageUrl: '#',
+                    id: 6,
+                    linkUrl: ''
+                },
+                {
+                    title: 'violet',
+                    imageUrl: '#',
+                    id: 7,
+                    linkUrl: ''
                 }
             ]
         }
@@ -26,8 +84,8 @@ class Directory extends React.Component {
         return (
             <div className='directory'>
                 {
-                    this.state.sections.map(({ title, imageUrl, id }) => (
-                        <MenuItem key={id} title={title} imageUrl={imageUrl}/>
+                    this.state.sections.map(({ id, ...otherSectionProps }) => (
+                        <MenuItem key={id} {...otherSectionProps} />
                     ))
                 }
             </div>    
