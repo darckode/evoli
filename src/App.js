@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import Homepage from './homepage';
+import Homepage from './pages/homepage/homepage';
 import './App.css';
 
 
