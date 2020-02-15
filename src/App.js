@@ -1,9 +1,10 @@
 import React from 'react';
 import { Switch, Route, } from 'react-router-dom';
-
 import logo from './assets/logo.png'
 
 import HomePage from './pages/homepage/homepage';
+import ShopPage from './pages/shop/shop';
+
 import './App.css';
 
 const CodePage = () => (
@@ -35,6 +36,7 @@ class App extends React.Component {
                 <h1>EVOLI</h1>
                 <Switch>
                     <Route exact path='/' component={HomePage} />
+                    <Route exact path='/shop' component={ ShopPage } /> 
                     <Route exact path='/code' component={CodePage} />
                     <Route exact path='/write' component={WritePage} />
                     <Route exact path='/dance' component={DancePage} />
