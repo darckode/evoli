@@ -9,6 +9,7 @@ h1 {
   text-align: center;
 }
 
-.logo {
-  width: 150px;
+a {
+  text-decoration: none;
+  color: beige;
 }
