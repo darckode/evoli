@@ -1,0 +1,17 @@
+.sign-in {
+    width: 35vw; 
+    background: burlywood;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        display:  flex;
+        justify-content: space-between;
+    }
+}

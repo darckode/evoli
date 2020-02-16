@@ -11,7 +11,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-
 a {
   text-decoration: none;
 }
+
+ * {
+   box-sizing: border-box;
+ }

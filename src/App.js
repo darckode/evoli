@@ -5,6 +5,8 @@ import Header from './components/header/header';
 import HomePage from './pages/homepage/homepage';
 import ShopPage from './pages/shop/shop';
 import ColorsPage from './pages/colors/colors';
+import LoginPage from './pages/login/login';
+import { auth } from './firebase/firebase.utils';
 
 import './App.css';
 
@@ -30,15 +32,36 @@ const FreerunPage = () => (
 ); 
 
 class App extends React.Component {
+    constructor() {
+        super()
+
+        this.state = {
+            currentUser: null
+        }
+    }
+
+    unsubscribeFromAuth = null;
+
+    componentDidMount() {
+        this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
+            this.setState({ currentUser: user });
+        });
+    }
+
+    componentWillUnmount() {
+        this.unsubscribeFromAuth();
+    }
+
     render() {
         return (
             <div>
-                <Header /> 
+                <Header currentUser={this.state.currentUser}/> 
                 <h1 className='title'>EVOLI</h1>
                 <Switch>
                     <Route exact path='/' component={HomePage} />
                     <Route exact path='/colors' component={ ColorsPage } /> 
                     <Route exact path='/shop' component={ ShopPage } />
+                    <Route exact path='/login' component={ LoginPage } />
                      
                     <Route exact path='/code' component={CodePage} />
                     <Route exact path='/write' component={WritePage} />
