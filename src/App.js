@@ -34,13 +34,13 @@ class App extends React.Component {
         return (
             <div>
                 <Header /> 
-                <h1>EVOLI</h1>
+                <h1 className='title'>EVOLI</h1>
                 <Switch>
                     <Route exact path='/' component={HomePage} />
                     <Route exact path='/colors' component={ ColorsPage } /> 
-                    <Route exact path='/shop' component={ ShopPage } /> 
+                    <Route exact path='/shop' component={ ShopPage } />
+                     
                     <Route exact path='/code' component={CodePage} />
-                    
                     <Route exact path='/write' component={WritePage} />
                     <Route exact path='/dance' component={DancePage} />
                     <Route exact path='/freerun' component={FreerunPage} />

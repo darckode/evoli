@@ -1,15 +1,17 @@
 body {
   background-color: rgb(0, 0, 50);
-  color: whitesmoke;
   font-family: Noteworthy, Montserrat, "Open Sans", Lato, Roboto, "Proxima Nova";
   padding: 30px 90px;
 }
 
 h1 {
   text-align: center;
+  background: -webkit-linear-gradient(0.125turn, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 a {
   text-decoration: none;
-  color: beige;
 }
