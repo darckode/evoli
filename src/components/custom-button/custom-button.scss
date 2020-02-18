@@ -6,7 +6,7 @@
     line-height: 50px;
     padding: 0 35px 0 35px;
     font-size: 15px;
-    background-color: rgb(139, 100, 48);
+    background-color: rgb(60, 0, 120);
     color: white;
     text-transform: uppercase;
     font-family: Noteworthy, 'Open Sans Condensed';
@@ -16,8 +16,7 @@
     cursor: pointer;
   
     &:hover {
-      background-color: bisque;
-      color: black;
+      background-color: rgb(20, 0, 40);
       border: 1px solid black;
     }
 

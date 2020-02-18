@@ -1,12 +1,13 @@
 body {
-  background-color: rgb(0, 0, 50);
+  background-color: rgb(20, 0, 40);
   font-family: Noteworthy, Montserrat, "Open Sans", Lato, Roboto, "Proxima Nova";
-  padding: 30px 90px;
+  /* padding: 0px 20px; */
 }
 
-h1 {
+h1, h3 {
   text-align: center;
   color: antiquewhite;
+  margin: 0;
 }
 
 a {

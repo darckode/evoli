@@ -1,0 +1,29 @@
+.library-page {
+    // height: 5%;
+    // width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    // background: linear-gradient(rgba(0,0,0,1), rgba(20,0,40,1));
+    margin: 5%;
+  
+    .library-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+
+        .link {
+            padding: 5px 20px;
+            margin: 0px 20px;
+            background: -webkit-linear-gradient(0.375turn, #3f87a6, #ebf8e1, #f69d3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-right: 0.5px solid silver;
+            border-bottom: 1px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 3vw;
+        }
+    }
+}
