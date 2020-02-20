@@ -17,7 +17,7 @@ const Header = ({ currentUser, hidden }) => (
         <div className='title'>
             <div>
                 <h1>EVOLI</h1>
-                <h3>the best I can be</h3>
+                <h3>0 = science + art => 1</h3>
             </div>
         </div>
         <div className='options'>
