@@ -1,19 +1,24 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+
+import { setCurrentUser } from './redux/user/user.actions';
+import { selectCurrentUser } from './redux/user/user.selectors';
 
 import Header from './components/header/header';
+
+import './App.css';
+
 import HomePage from './pages/homepage/homepage';
 import AboutPage from './pages/about/about';
 import LibraryPage from './pages/library/library';
 import ColorsPage from './pages/colors/colors';
 import ShopPage from './pages/shop/shop';
+import CheckoutPage from './pages/checkout/checkout';
 import LoginPage from './pages/login/login';
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-import { setCurrentUser } from './redux/user/user.actions';
-
-import './App.css';
-
 import CodePage from './pages/code/code';
 import WritePage from './pages/write/write';
 import DancePage from './pages/dance/dance';
@@ -55,7 +60,8 @@ class App extends React.Component {
                     <Route exact path='/about' component={ AboutPage } /> 
                     <Route exact path='/projects' component={ProjectsPage} />
                     <Route exact path='/library' component={LibraryPage} />
-                    <Route exact path='/shop' component={ ShopPage } />
+                    <Route path='/shop' component={ ShopPage } />
+                    <Route exact path='/checkout' component={ CheckoutPage } />
                     <Route 
                         exact 
                         path='/login' 
@@ -80,8 +86,8 @@ class App extends React.Component {
     }
 }
 
-const mapStateToProps = ({ user }) => ({
-    currentUser: user.currentUser
+const mapStateToProps = createStructuredSelector({
+    currentUser: selectCurrentUser
 })
 
 const mapDispatchToProps = dispatch => ({
