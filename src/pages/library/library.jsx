@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Directory from '../../components/directory/directory';
+
 import LIBRARY_DATA from './library.data';
-import CollectionPreview from '../../components/collection-preview/collection-preview';
+// import CollectionPreview from '../../components/collection-preview/collection-preview';
  import './library.scss';
  
 class LibraryPage extends React.Component {
@@ -15,16 +17,10 @@ class LibraryPage extends React.Component {
     }
 
     render() {
-        const { collections } = this.state;
+        // const { collections } = this.state;
         return (
             <div className='library-page'>
-                <div>
-                    {
-                        collections.map(({ id, ...otherCollectionProps }) => (
-                            <CollectionPreview key={id} { ...otherCollectionProps } />
-                        ))
-                    }
-                </div>
+                <Directory />
                 <div className='library-link'>
                     <Link className='link' to='/code'>CODE</Link>
                     <Link className='link' to='/write'>WRITE</Link>
