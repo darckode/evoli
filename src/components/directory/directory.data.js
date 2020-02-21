@@ -13,7 +13,7 @@ const SECTIONS_DATA = [
     },
     {
         title: 'dance',
-        imageUrl: 'http://www.aljanh.net/data/archive/img/3183568124.jpeg',
+        imageUrl: 'https://ilovehdwallpapers.com/wallpapers//hot-dancing-couple-boy-girl-dance-1920x1200.jpg',
         id: 3,
         linkUrl: 'dance'
     },
