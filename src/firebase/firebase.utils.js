@@ -3,15 +3,17 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyD_6-GX-WaTVl-8-YdYlAwgrAfW_uG30Xc",
-    authDomain: "evoli-2127a.firebaseapp.com",
-    databaseURL: "https://evoli-2127a.firebaseio.com",
-    projectId: "evoli-2127a",
-    storageBucket: "evoli-2127a.appspot.com",
-    messagingSenderId: "435584694803",
-    appId: "1:435584694803:web:57e4857d099c71bd9e1de6",
-    measurementId: "G-3YTBM7FCG4"
+    apiKey: "AIzaSyD0pIri-gAaZalg7_MTD_o5DVvFSWnqI9A",
+    authDomain: "evolixion.firebaseapp.com",
+    databaseURL: "https://evolixion.firebaseio.com",
+    projectId: "evolixion",
+    storageBucket: "evolixion.appspot.com",
+    messagingSenderId: "72896042947",
+    appId: "1:72896042947:web:5a947ffb6a70b515ebcf76",
+    measurementId: "G-3Q7R2EDRJH"
 };
+
+firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if(!userAuth) return;
@@ -37,7 +39,17 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     return userRef;
 }
 
-firebase.initializeApp(config);
+export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+    const collectionRef = firestore.collection(collectionKey);
+  
+    const batch = firestore.batch();
+    objectsToAdd.forEach(obj => {
+      const newDocRef = collectionRef.doc();
+      batch.set(newDocRef, obj);
+    })
+  
+    return await batch.commit()
+  }; 
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();

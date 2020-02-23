@@ -1,13 +1,13 @@
 body {
-  background: white;
   font-family: 'Open Sans Condensed';
-  background: linear-gradient(180deg,rgb(67, 48, 46) 10%,rgb(250, 235, 215) 50%);
+  /* background: rgb(67, 48, 46); */
+  background: linear-gradient(90deg,rgb(67, 48, 46) 75%,rgb(250, 235, 215) 100%);
   /* padding: 0px 20px; */
+  color: antiquewhite;
 }
 
 h1, h3 {
   text-align: center;
-  color: antiquewhite;
   margin: 0;
 }
 
