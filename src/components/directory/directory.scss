@@ -1,6 +1,5 @@
-.directory-menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.directory {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
 }

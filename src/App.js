@@ -19,10 +19,12 @@ import ColorsPage from './pages/colors/colors';
 import ShopPage from './pages/shop/shop';
 import CheckoutPage from './pages/checkout/checkout';
 import LoginPage from './pages/login/login';
+
 import CodePage from './pages/code/code';
 import WritePage from './pages/write/write';
 import DancePage from './pages/dance/dance';
 import FreerunPage from './pages/freerun/freerun';
+
 import ProjectsPage from './pages/projects/projects';
 
 class App extends React.Component {
@@ -74,12 +76,12 @@ class App extends React.Component {
                         }
                     />
 
-                    <Route exact path='/code' component={ CodePage } /> 
-                    <Route exact path='/write' component={ WritePage } /> 
-                    <Route exact path='/dance' component={ DancePage } /> 
-                    <Route exact path='/freerun' component={ FreerunPage } /> 
+                    <Route path='/library/code' component={ CodePage } /> 
+                    <Route path='/library/write' component={ WritePage } /> 
+                    <Route path='/library/dance' component={ DancePage } /> 
+                    <Route path='/library/freerun' component={ FreerunPage } /> 
 
-                    <Route exact path='/colors' component={ ColorsPage } /> 
+                    <Route path='/colors' component={ ColorsPage } /> 
                 </Switch>
             </div>
         )

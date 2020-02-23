@@ -11,16 +11,17 @@ const LIBRARY_DATA = [
                 linkUrl: 'code'
             },
             {
-                title: 'write',
-                imageUrl: 'https://flood-rescue.com/img/wallpaper-writing-34.jpg',
-                id: 2,
-                linkUrl: 'write'
-            },
-            {
                 title: 'dance',
                 imageUrl: 'https://ilovehdwallpapers.com/wallpapers//hot-dancing-couple-boy-girl-dance-1920x1200.jpg',
-                id: 3,
+                id: 222,
                 linkUrl: 'dance'
+            },
+            {
+                title: 'write',
+                imageUrl: 'https://flood-rescue.com/img/wallpaper-writing-34.jpg',
+                // imageUrl: 'https://i1.wp.com/www.thewritersworkshop.net/wp-content/uploads/2015/10/journal.jpg?ssl=1',
+                id: 333,
+                linkUrl: 'write'
             },
             {
                 title: 'freerun',

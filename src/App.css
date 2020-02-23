@@ -1,12 +1,12 @@
 body {
-  background: rgb(67, 48, 46);
-  font-family: Noteworthy, Ubuntu, Montserrat, "Open Sans", Lato, Roboto, "Proxima Nova";
+  background: white;
+  font-family: 'Open Sans Condensed';
   /* padding: 0px 20px; */
 }
 
 h1, h3 {
   text-align: center;
-  color: antiquewhite;
+  color: rgb(67, 48, 46);
   margin: 0;
 }
 

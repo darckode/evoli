@@ -5,9 +5,10 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border: 1px solid antiquewhite;
-    color: antiquewhite;
-    background-color: rgba(34, 24, 23,0.9);
+    // border: 1px solid antiquewhite;
+    border-radius: 10px;
+    color: black;
+    background: linear-gradient(180deg,rgba(201, 193, 221,0.5) 0%,rgba(255, 255, 255,1) 80%);
     top: 90px;
     right: 40px;
     z-index: 5;

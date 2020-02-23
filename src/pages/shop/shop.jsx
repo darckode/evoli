@@ -8,9 +8,9 @@ import './shop.scss';
  
 const ShopPage = ({ match }) => (
     <div className='shop-page'>
-        <Route exact path={`${match.path}`} component={CollectionsOverview} /> 
-        <Route path={`${match.path}/:collectionId`} component={CollectionPage}/> 
+      <Route exact path={`${match.path}`} component={CollectionsOverview} />
+      <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
     </div>
-)
+  );
 
 export default ShopPage;

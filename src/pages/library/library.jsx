@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import Directory from '../../components/directory/directory';
 
@@ -21,12 +21,12 @@ class LibraryPage extends React.Component {
         return (
             <div className='library-page'>
                 <Directory />
-                <div className='library-link'>
+                {/* <div className='library-link'>
                     <Link className='link' to='/code'>CODE</Link>
                     <Link className='link' to='/write'>WRITE</Link>
                     <Link className='link' to='/dance'>DANCE</Link>
                     <Link className='link' to='/freerun'>FREERUN</Link>
-                </div>
+                </div> */}
             </div>
         )
     }
