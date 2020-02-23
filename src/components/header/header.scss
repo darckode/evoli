@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 5fr 6fr;
     grid-template-rows: 1fr;
-    background: linear-gradient(180deg,#c9c1dd 0%,#ffffff 80%);
+    background: linear-gradient(180deg,#43302e 0%,#43302e 100%);
     margin-bottom: 5%;
     padding-top: 1%;
   
@@ -26,7 +26,7 @@
       .option {
         padding: 5px 20px;
         margin: 0px 10px;
-        background: -webkit-linear-gradient(0.375turn, rgb(123, 0, 0), rgb(0,123,0), rgb(0,0,123));
+        background: -webkit-linear-gradient(0.375turn, rgb(255, 240, 240), rgb(240,255,240), rgb(240,240,255));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         border-right: 0.5px solid rgba(0, 100, 0, 0.3);
