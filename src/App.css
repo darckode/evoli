@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans Condensed';
-  /* background: rgb(67, 48, 46); */
-  background: linear-gradient(90deg,rgb(67, 48, 46) 75%,rgb(250, 235, 215) 100%);
+  background: rgb(30, 10, 10);
+  /* background: linear-gradient(90deg,rgb(250, 235, 215) 0%, rgb(67, 48, 46) 3%,rgb(67, 48, 46) 97%, rgb(250, 235, 215) 100%); */
   /* padding: 0px 20px; */
   color: antiquewhite;
 }

@@ -6,7 +6,7 @@
     line-height: 50px;
     padding: 0 35px 0 35px;
     font-size: 15px;
-    background-color: rgb(60, 0, 120);
+    background-color: rgb(133, 66, 244);
     color: white;
     text-transform: uppercase;
     font-family: Noteworthy, 'Open Sans Condensed';
@@ -18,16 +18,16 @@
     justify-content: center;
   
     &:hover {
-      background-color: rgb(20, 0, 40);
+      background-color: rgb(111, 44, 222);
       border: 1px solid black;
     }
 
     &.google-sign-in {
-       background-color: #4285f4;
+       background-color: rgb(66, 133, 244);
        color: white;
 
        &:hover {
-         background-color: #357ae8;
+         background-color: rgb(44, 111, 222);
          border: none;
        }
     }
