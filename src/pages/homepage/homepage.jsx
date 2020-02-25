@@ -4,10 +4,10 @@ import './homepage.scss';
 const HomePage = () => (
     <div className='homepage'>
         <section>
-            <h1>all we do</h1>
+            <h1></h1>
         </section>
         <aside>
-            <p>в добрый день</p>
+            <p></p>
         </aside>
     </div>
 )
